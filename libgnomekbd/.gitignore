@@ -1,0 +1,16 @@
+.deps
+.libs
+*.la
+*.lo
+*.gschema.valid
+*.gschema.xml
+*.gschema.xml.in
+*.o
+*.desktop
+*.desktop.in
+*marshal.c
+*marshal.h
+Makefile
+Makefile.in
+gkbd-keyboard-display
+

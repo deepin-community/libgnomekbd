@@ -1,0 +1,316 @@
+# Ukrainian translation of libgnomekbd.
+# Copyright (C) 2000 Free Software Foundation, Inc.
+# Maxim Dziumanenko <dziumanenko@gmail.com>, 2007-2010.
+# wanderlust <wanderlust@ukr.net>, 2009.
+# Korostil Daniel <ted.korostiled@gmail.com>, 2011.
+# Yuri Chornoivan <yurchor@ukr.net>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: libgnomekbd\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/libgnomekbd/issues\n"
+"POT-Creation-Date: 2022-06-14 11:18+0000\n"
+"PO-Revision-Date: 2022-06-14 21:59+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.12.0\n"
+
+#: libgnomekbd/gkbd-indicator.c:422 libgnomekbd/gkbd-status.c:560
+msgid "XKB initialization error"
+msgstr "Помилка запуску XKB"
+
+#. Translators: The count is related to the number of options. The %s
+#. * format specifier should not be modified, left "as is".
+#: libgnomekbd/gkbd-keyboard-config.c:712
+#, c-format
+#| msgid "layout \"%s\""
+#| msgid_plural "layouts \"%s\""
+msgid "layout “%s”"
+msgid_plural "layouts “%s”"
+msgstr[0] "розкладка «%s»"
+msgstr[1] "розкладки «%s»"
+msgstr[2] "розкладок «%s»"
+msgstr[3] "розкладка «%s»"
+
+#. Translators: The count is related to the number of options. The %s
+#. * format specifier should not be modified, left "as is".
+#: libgnomekbd/gkbd-keyboard-config.c:730
+#, c-format
+#| msgid "option \"%s\""
+#| msgid_plural "options \"%s\""
+msgid "option “%s”"
+msgid_plural "options “%s”"
+msgstr[0] "параметр «%s»"
+msgstr[1] "параметри «%s»"
+msgstr[2] "параметрів «%s»"
+msgstr[3] "параметр «%s»"
+
+#: libgnomekbd/gkbd-keyboard-config.c:738
+#, c-format
+#| msgid "model \"%s\", %s and %s"
+msgid "model “%s”, %s and %s"
+msgstr "модель «%s», %s та %s"
+
+#: libgnomekbd/gkbd-keyboard-config.c:739
+msgid "no layout"
+msgstr "немає розкладки"
+
+#: libgnomekbd/gkbd-keyboard-config.c:740
+msgid "no options"
+msgstr "немає параметрів"
+
+#: libgnomekbd/gkbd-keyboard-display.desktop.in.in:3
+#: libgnomekbd/show-layout.ui:7
+msgid "Keyboard Layout"
+msgstr "Розкладка клавіатури"
+
+#: libgnomekbd/gkbd-keyboard-display.desktop.in.in:4
+msgid "Preview keyboard layouts"
+msgstr "Перегляд розкладки клавіатури"
+
+#: libgnomekbd/gkbd-keyboard-drawing.c:2457
+#, c-format
+#| msgid ""
+#| "Keyboard layout \"%s\"\n"
+#| "Copyright &#169; X.Org Foundation and XKeyboardConfig contributors\n"
+#| "For licensing see package metadata"
+msgid ""
+"Keyboard layout “%s”\n"
+"Copyright &#169; X.Org Foundation and XKeyboardConfig contributors\n"
+"For licensing see package metadata"
+msgstr ""
+"Розкладка клавіатури «%s»\n"
+"Copyright &#169; X.Org Foundation та учасники розробки XKeyboardConfig\n"
+"Ліцензію викладено в метаданих пакунка"
+
+#: libgnomekbd/gkbd-keyboard-drawing.c:2607
+msgid "Unknown"
+msgstr "Невідомо"
+
+#: libgnomekbd/gkbd-status.c:299
+#, c-format
+msgid "There was an error loading an image: %s"
+msgstr "Помилка завантаження зображення: %s"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:7
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:8
+msgid "Default group, assigned on window creation"
+msgstr "Типова група, що призначається при створенні вікна"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:12
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:13
+msgid "Keep and manage separate group per window"
+msgstr "Зберігати та підтримувати різні групи для окремих вікон"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:17
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:18
+msgid "Save/restore indicators together with layout groups"
+msgstr "Зберігати/відновлювати індикатори разом з групами розкладок"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:22
+msgid "Show layout names instead of group names"
+msgstr "Показувати назви розкладок замість назв груп"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:23
+msgid ""
+"Show layout names instead of group names (only for versions of XFree "
+"supporting multiple layouts)"
+msgstr ""
+"Показувати назви замість назв груп (лише для версій XFree, які підтримують "
+"багато розкладок)"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:27
+msgid "Load extra configuration items"
+msgstr "Завантажити додаткові пункти налаштувань"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:28
+msgid "Load exotic, rarely used layouts and options"
+msgstr "Завантажити екзотичні, рідко вживані розкладки та параметри"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:11
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:12
+msgid "The Keyboard Preview, X offset"
+msgstr "Перегляд клавіатури, зсув з X"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:17
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:18
+msgid "The Keyboard Preview, Y offset"
+msgstr "Перегляд клавіатури, зсув з Y"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:23
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:24
+msgid "The Keyboard Preview, width"
+msgstr "Перегляд клавіатури, ширина"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:29
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:30
+msgid "The Keyboard Preview, height"
+msgstr "Перегляд клавіатури, висота"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:37
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:38
+msgid "Secondary groups"
+msgstr "Другорядні групи"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:42
+msgid "Show flags in the applet"
+msgstr "Показувати прапори в аплеті"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:43
+msgid "Show flags in the applet to indicate the current layout"
+msgstr "Показувати прапори у аплеті для індикації теперішньої розкладки"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:47
+msgid "The font family"
+msgstr "Гарнітура шрифту"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:48
+msgid "The font family for the layout indicator"
+msgstr "Гарнітура шрифту для індикатора розкладки"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:53
+msgid "The font size"
+msgstr "Розмір шрифту"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:54
+msgid "The font size for the layout indicator"
+msgstr "Розмір шрифту для індикатора розкладки"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:58
+msgid "The foreground color"
+msgstr "Колір тексту"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:59
+msgid "The foreground color for the layout indicator"
+msgstr "Колір тексту для індикатора розкладки"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:63
+msgid "The background color"
+msgstr "Колір тла"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:64
+msgid "The background color for the layout indicator"
+msgstr "Колір тла для індикатора розкладки"
+
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:6
+msgid "Keyboard model"
+msgstr "Модель клавіатури"
+
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:7
+msgid "keyboard model"
+msgstr "модель клавіатури"
+
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:11
+msgid "Keyboard layout"
+msgstr "Розкладка клавіатури"
+
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:12
+msgid "keyboard layout"
+msgstr "розкладка клавіатури"
+
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:16
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:17
+msgid "Keyboard options"
+msgstr "Параметри клавіатури"
+
+#: test/gkbd-indicator-test.c:66
+msgid "Indicator:"
+msgstr "Індикатор:"
+
+#~ msgid "The list of enabled Keyboard Indicator plugins"
+#~ msgstr "Список додатків для індикатора клавіатури"
+
+#~ msgid "Activate more plugins"
+#~ msgstr "Увімкнути більше додатків"
+
+#~ msgid "Active _plugins:"
+#~ msgstr "Увімкнені _додатки:"
+
+#~ msgid "Close the dialog"
+#~ msgstr "Закрити вікно"
+
+#~ msgid "Configure the selected plugin"
+#~ msgstr "Налаштувати вибраний додаток"
+
+#~ msgid "Deactivate selected plugin"
+#~ msgstr "Вимкнути вибраний додаток"
+
+#~ msgid "Decrease the plugin priority"
+#~ msgstr "Зменшити пріоритет додатка"
+
+#~ msgid "Increase the plugin priority"
+#~ msgstr "Збільшити пріоритет додатка"
+
+#~ msgid "Keyboard Indicator Plugins"
+#~ msgstr "Додатки індикатора клавіатури"
+
+#~ msgid "The list of active plugins"
+#~ msgstr "Список увімкнутих додатків"
+
+#~ msgid "Add Plugin"
+#~ msgstr "Додати додаток"
+
+#~ msgid "_Available plugins:"
+#~ msgstr "_Доступні додатки:"
+
+#~ msgid "No description."
+#~ msgstr "Немає опису."
+
+#~ msgid "Unable to open help file"
+#~ msgstr "Не вдалось відкрити файл довідки"
+
+#~ msgid "Enable/disable installed plugins"
+#~ msgstr "Увімкнути/вимкнути встановлені додатки"
+
+#~ msgid "Keyboard Indicator plugins"
+#~ msgstr "Додатки до індикатора клавіатури"
+
+#~ msgid "Keyboard Layout \"%s\""
+#~ msgstr "Розкладка клавіатури «%s»"
+
+#~ msgid ""
+#~ "A collection of scripts to run whenever the keyboard state is reloaded. "
+#~ "Useful for re-applying xmodmap based adjustments"
+#~ msgstr ""
+#~ "Колекція сценаріїв, що запускаються при перезавантаженні стану "
+#~ "клавіатури. Корисно для повторного накладання корекцій на основі xmodmap"
+
+#~ msgid "A list of modmap files available in the $HOME directory."
+#~ msgstr "Список файлів modmap, що доступні у каталозі $HOME."
+
+#~ msgid "Keyboard Update Handlers"
+#~ msgstr "Обробники оновлення клавіатури"
+
+#~ msgid "Suppress the \"X sysconfig changed\" warning message"
+#~ msgstr "Не виводити повідомлення \"Змінилась конфігурація X\""
+
+#~ msgid "modmap file list"
+#~ msgstr "список файлів modmap"
+
+#~ msgid "Failed to init GConf: %s\n"
+#~ msgstr "Помилка ініціалізації GConf: %s\n"
+
+#~ msgid "Keyboard Indicator Test (%s)"
+#~ msgstr "Перевірка індикатора клавіатури (%s)"
+
+#~ msgid ""
+#~ "Keyboard settings in gconf will be overridden from the system ASAP "
+#~ "(deprecated)"
+#~ msgstr ""
+#~ "Клавіатурні параметри у gconf будуть негайно замінені системними "
+#~ "(застаріло)"
+
+#~ msgid ""
+#~ "Very soon, keyboard settings in gconf will be overridden (from the system "
+#~ "configuration) This key has been deprecated since GNOME 2.12, please "
+#~ "unset the model, layouts and options keys to get the default system "
+#~ "configuration."
+#~ msgstr ""
+#~ "Скоро параметри клавіатури у gconf будуть перезаписані (з системної "
+#~ "конфігурації) Цей ключ застарів з версії GNOME 2.12. Щоб отримати типову "
+#~ "конфігурацію видаліть значення ключів моделі, розкладки та параметрів."

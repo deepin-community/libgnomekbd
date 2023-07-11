@@ -1,0 +1,311 @@
+# Dutch translation for libgnomekbd
+#
+# This file is distributed under the same license as the libgnomekbd package.
+#
+# Wouter Bolsterlee <wbolster@gnome.org>, 2007–2011.
+# Nathan Follens <nthn@unseen.is>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: libgnomekbd\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=libgnomekbd&keywords=I18N+L10N&component=Indicator\n"
+"POT-Creation-Date: 2017-03-19 15:43+0000\n"
+"PO-Revision-Date: 2017-09-11 00:18+0200\n"
+"Last-Translator: Nathan Follens <nthn@unseen.is>\n"
+"Language-Team: Dutch <vertaling@vrijschrift.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.3\n"
+
+#: libgnomekbd/gkbd-indicator.c:422 libgnomekbd/gkbd-status.c:560
+msgid "XKB initialization error"
+msgstr "XKB-initialisatiefout"
+
+#. Translators: The count is related to the number of options. The %s
+#. * format specifier should not be modified, left "as is".
+#: libgnomekbd/gkbd-keyboard-config.c:712
+#, c-format
+msgid "layout \"%s\""
+msgid_plural "layouts \"%s\""
+msgstr[0] "indeling ‘%s’"
+msgstr[1] "indelingen ‘%s’"
+
+#. Translators: The count is related to the number of options. The %s
+#. * format specifier should not be modified, left "as is".
+#: libgnomekbd/gkbd-keyboard-config.c:730
+#, c-format
+msgid "option \"%s\""
+msgid_plural "options \"%s\""
+msgstr[0] "optie ‘%s’"
+msgstr[1] "opties ‘%s’"
+
+#: libgnomekbd/gkbd-keyboard-config.c:738
+#, c-format
+msgid "model \"%s\", %s and %s"
+msgstr "model ‘%s’, ‘%s’ en ‘%s’"
+
+#: libgnomekbd/gkbd-keyboard-config.c:739
+msgid "no layout"
+msgstr "geen indeling"
+
+#: libgnomekbd/gkbd-keyboard-config.c:740
+msgid "no options"
+msgstr "geen opties"
+
+#: libgnomekbd/gkbd-keyboard-display.desktop.in.in:3
+#: libgnomekbd/show-layout.ui:7
+msgid "Keyboard Layout"
+msgstr "Toetsenbordindeling"
+
+#: libgnomekbd/gkbd-keyboard-display.desktop.in.in:4
+msgid "Preview keyboard layouts"
+msgstr "Voorbeelden van toetsenbordindelingen tonen"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: libgnomekbd/gkbd-keyboard-display.desktop.in.in:6
+msgid "preferences-desktop-keyboard"
+msgstr "preferences-desktop-keyboard"
+
+#: libgnomekbd/gkbd-keyboard-drawing.c:2457
+#, c-format
+msgid ""
+"Keyboard layout \"%s\"\n"
+"Copyright &#169; X.Org Foundation and XKeyboardConfig contributors\n"
+"For licensing see package metadata"
+msgstr ""
+"Toetsenbordindeling ‘%s’\n"
+"Copyright © X.org Foundation en XKeyboardConfig-medewerkers\n"
+"Zie de metadata van het pakket voor licentievoorwaarden"
+
+#: libgnomekbd/gkbd-keyboard-drawing.c:2607
+msgid "Unknown"
+msgstr "Onbekend"
+
+#: libgnomekbd/gkbd-status.c:299
+#, c-format
+msgid "There was an error loading an image: %s"
+msgstr "Probleem bij laden van afbeelding: %s"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:7
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:8
+msgid "Default group, assigned on window creation"
+msgstr "Standaardgroep, toegewezen bij aanmaken van vensters"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:12
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:13
+msgid "Keep and manage separate group per window"
+msgstr "Aparte groep per venster bijhouden"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:17
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:18
+msgid "Save/restore indicators together with layout groups"
+msgstr "Onthouden/laden van indicatoren tegelijk met indelingsgroepen"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:22
+msgid "Show layout names instead of group names"
+msgstr "Indelingsnaam tonen in plaats van groepnaam"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:23
+msgid ""
+"Show layout names instead of group names (only for versions of XFree "
+"supporting multiple layouts)"
+msgstr ""
+"Indelingsnaam tonen in plaats van groepnaam (alleen voor versies van XFree "
+"die meerdere indelingen ondersteunen)"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:27
+msgid "Load extra configuration items"
+msgstr "Extra configuratie-items laden"
+
+#: libgnomekbd/org.gnome.libgnomekbd.desktop.gschema.xml.in:28
+msgid "Load exotic, rarely used layouts and options"
+msgstr "Exotische, zelden gebruikte layouts en opties laden"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:11
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:12
+msgid "The Keyboard Preview, X offset"
+msgstr "Toetsenbordvoorbeeld, X-afstand"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:17
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:18
+msgid "The Keyboard Preview, Y offset"
+msgstr "Toetsenbordvoorbeeld, Y-afstand"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:23
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:24
+msgid "The Keyboard Preview, width"
+msgstr "Toetsenbordvoorbeeld, breedte"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:29
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:30
+msgid "The Keyboard Preview, height"
+msgstr "Toetsenbordvoorbeeld, hoogte"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:37
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:38
+msgid "Secondary groups"
+msgstr "Secundaire groepen"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:42
+msgid "Show flags in the applet"
+msgstr "Vlaggen tonen in het applet"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:43
+msgid "Show flags in the applet to indicate the current layout"
+msgstr "Vlaggen in het applet tonen om de huidige indeling aan te geven"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:47
+msgid "The font family"
+msgstr "De letterfamilie"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:48
+msgid "The font family for the layout indicator"
+msgstr "De letterfamilie van de indelingsindicator"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:53
+msgid "The font size"
+msgstr "De lettergrootte"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:54
+msgid "The font size for the layout indicator"
+msgstr "De lettergrootte van de indelingsindicator"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:58
+msgid "The foreground color"
+msgstr "De voorgrondkleur"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:59
+msgid "The foreground color for the layout indicator"
+msgstr "De voorgrondkleur van de indelingsindicator"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:63
+msgid "The background color"
+msgstr "De achtergrondkleur"
+
+#: libgnomekbd/org.gnome.libgnomekbd.gschema.xml.in:64
+msgid "The background color for the layout indicator"
+msgstr "De achtergrondkleur van de indelingsindicator"
+
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:6
+msgid "Keyboard model"
+msgstr "Toetsenbordmodel"
+
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:7
+msgid "keyboard model"
+msgstr "toetsenbordmodel"
+
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:11
+msgid "Keyboard layout"
+msgstr "Toetsenbordindeling"
+
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:12
+msgid "keyboard layout"
+msgstr "toetsenbordindeling"
+
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:16
+#: libgnomekbd/org.gnome.libgnomekbd.keyboard.gschema.xml.in:17
+msgid "Keyboard options"
+msgstr "Toetsenbordopties"
+
+#: test/gkbd-indicator-test.c:66
+msgid "Indicator:"
+msgstr "Indicator:"
+
+#~ msgid "The list of enabled Keyboard Indicator plugins"
+#~ msgstr "Lijst van ingeschakelde plug-ins voor toetsenbordindicatie"
+
+#~ msgid "Activate more plugins"
+#~ msgstr "Meer plug-ins inschakelen"
+
+#~ msgid "Active _plugins:"
+#~ msgstr "Ingeschakelde _plug-ins:"
+
+#~ msgid "Close the dialog"
+#~ msgstr "Venster sluiten"
+
+#~ msgid "Configure the selected plugin"
+#~ msgstr "Geselecteerde plug-in instellen"
+
+#~ msgid "Deactivate selected plugin"
+#~ msgstr "Geselecteerde plugin uitschakelen"
+
+#~ msgid "Decrease the plugin priority"
+#~ msgstr "Prioriteit van plug-in verlagen"
+
+#~ msgid "Increase the plugin priority"
+#~ msgstr "Prioriteit van plug-in verhogen"
+
+#~ msgid "Keyboard Indicator Plugins"
+#~ msgstr "Plug-ins voor toetsenbordindicatie"
+
+#~ msgid "The list of active plugins"
+#~ msgstr "Lijst van ingeschakelde plug-ins"
+
+#~ msgid "Add Plugin"
+#~ msgstr "Plug-in toevoegen"
+
+#~ msgid "_Available plugins:"
+#~ msgstr "_Beschikbare plug-ins:"
+
+#~ msgid "No description."
+#~ msgstr "Geen beschrijving."
+
+#~ msgid "Unable to open help file"
+#~ msgstr "Kon hulpbestand niet openen"
+
+#~ msgid "Enable/disable installed plugins"
+#~ msgstr "Geïnstalleerde plug-ins in- of uitschakelen"
+
+#~ msgid "Keyboard Indicator plugins"
+#~ msgstr "Plug-ins voor toetsenbordindicatie"
+
+#~ msgid "Keyboard Layout \"%s\""
+#~ msgstr "Toetsenbordindeling ‘%s’"
+
+#~ msgid ""
+#~ "A collection of scripts to run whenever the keyboard state is reloaded. "
+#~ "Useful for re-applying xmodmap based adjustments"
+#~ msgstr ""
+#~ "Een verzameling scripts die uitgevoerd worden als de keyboardinstellingen "
+#~ "opnieuw geladen worden. Dit is bruikbaar om bijvoorbeeld xmodmap-"
+#~ "gebaseerde aanpassingen opnieuw uit te laten voeren."
+
+#~ msgid "A list of modmap files available in the $HOME directory."
+#~ msgstr "Lijst van modmap-bestanden beschikbaar in de $HOME-map."
+
+#~ msgid "Keyboard Update Handlers"
+#~ msgstr "Afhandelaars voor toetsenbord-updates"
+
+#~ msgid "Suppress the \"X sysconfig changed\" warning message"
+#~ msgstr "Het bericht ‘X sysconfig gewijzigd’ onderdrukken"
+
+#~ msgid "modmap file list"
+#~ msgstr "Lijst van modmap-bestanden"
+
+#~ msgid "Failed to init GConf: %s\n"
+#~ msgstr "Kon Gconf niet initaliseren: %s\n"
+
+#~ msgid "Keyboard Indicator Test (%s)"
+#~ msgstr "Toetsenbordindicatietest (%s)"
+
+#~ msgid ""
+#~ "Keyboard settings in gconf will be overridden from the system ASAP "
+#~ "(deprecated)"
+#~ msgstr ""
+#~ "Toetsenbordinstellingen in gconf zullen zo snel mogelijk overschreven "
+#~ "worden door het systeem (achterhaald)."
+
+#~ msgid ""
+#~ "Very soon, keyboard settings in gconf will be overridden (from the system "
+#~ "configuration) This key has been deprecated since GNOME 2.12, please "
+#~ "unset the model, layouts and options keys to get the default system "
+#~ "configuration."
+#~ msgstr ""
+#~ "Toetsenbordinstellingen vanuit Gconf zullen zeer binnenkort overschreven "
+#~ "worden door de systeeminstellingen. Deze sleutel is al achterhaald sinds "
+#~ "Gnome 2.12, dus gaarne het model, de indelingen en de opties verwijderen "
+#~ "om de systeeminstellingen te gebruiken."
