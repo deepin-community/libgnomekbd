@@ -1,0 +1,59 @@
+From 2458b65df64b75a3a8b9ea7d3a3898266ae96bba Mon Sep 17 00:00:00 2001
+From: James M Leddy <jm.leddy@gmail.com>
+Date: Thu, 14 Feb 2013 17:54:34 -0500
+Subject: [PATCH] Remove redundent key label information
+
+There are a few keys that display 4 of the same thing. Most notable
+are the function keys and the math operators on the numpad. This
+is redundant without adding any new information. This patch seeks
+to address this by not printing anything that matches the keycode
+in the top left corner of the key.
+
+There is more info in https://bugzilla.gnome.org/show_bug.cgi?id=693847
+---
+ libgnomekbd/gkbd-keyboard-drawing.c |    9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+Index: b/libgnomekbd/gkbd-keyboard-drawing.c
+===================================================================
+--- a/libgnomekbd/gkbd-keyboard-drawing.c
++++ b/libgnomekbd/gkbd-keyboard-drawing.c
+@@ -999,6 +999,7 @@
+ 	gint x, y, width, height;
+ 	gint padding;
+ 	gint g, l, glp;
++	KeySym left_sym = 0;
+ 
+ 	if (!drawing->xkb || !drawing->groupLevels || keycode == INVALID_KEYCODE)
+ 		return;
+@@ -1041,11 +1042,15 @@
+ 						 XkbBuildCoreState
+ 						 (drawing->mods, g),
+ 						 &mods_rtrn, &keysym)) {
++				if (keysym == left_sym)
++					continue;
+ 				draw_key_label_helper (context, drawing,
+ 						       keysym, angle, glp,
+ 						       x, y, width, height,
+ 						       padding,
+ 						       is_pressed);
++				if (glp == GKBD_KEYBOARD_DRAWING_POS_TOPLEFT)
++					left_sym = keysym;
+ 				/* reverse y order */
+ 			}
+ 		} else {
+@@ -1054,10 +1059,14 @@
+ 			keysym =
+ 			    XkbKeySymEntry (drawing->xkb, keycode, l, g);
+ 
++			if (keysym == left_sym)
++				continue;
+ 			draw_key_label_helper (context, drawing, keysym,
+ 					       angle, glp, x, y, width,
+ 					       height, padding,
+ 					       is_pressed);
++			if (glp == GKBD_KEYBOARD_DRAWING_POS_TOPLEFT)
++				left_sym = keysym;
+ 			/* reverse y order */
+ 		}
+ 	}
